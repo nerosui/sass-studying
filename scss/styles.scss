@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+$base_color: #ffdd99;
+$accent_color: #99ddff;
+$base_up: lighten($base_color , 10);
+$base_down: darken($base_color , 30);
+
+div{
+	.test1{
+	background: $base_color;
+	}
+	.test2{
+	background: $base_down;
+	}
+}

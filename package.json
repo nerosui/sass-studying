@@ -1,0 +1,7 @@
+{
+    "name": "node-sass-build",
+    "version": "0.1.0",
+    "scripts": {
+       "build-sass": "node-sass -w scss -o css/ --output-style expanded"
+    }
+  }

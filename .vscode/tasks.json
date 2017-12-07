@@ -1,0 +1,20 @@
+// Sass build
+// このファイルは Node.js の node-sass モジュールを使って scss ファイルをビルドする為の定義です
+// Ctrl+Shift+B で scss ファイルを変換して css ファイルを生成します
+// npm run build-sass　が実行されると package.json 内の build-sass に記述されている node-sass コマンドが実行されます  
+// ビルドオプションの ファイル変更監視、マップファイル、出力書式タイプ等は package.json 内で指定します
+// オプション内容は https://www.npmjs.com/package/node-sass を参照して下さい
+// 例：node-sass -w --source-map true --output-style compressed sass/style.scss style.css",
+{
+    "version": "0.1.0",
+    "command": "npm",
+    "isShellCommand": true,
+    "args": ["run"],
+    "tasks": [ 
+        { 
+          "taskName": "build-sass",
+          "isBuildCommand": true,
+          "showOutput": "always"
+        }
+    ]
+}
